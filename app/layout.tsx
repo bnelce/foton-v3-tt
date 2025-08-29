@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next"
-import { Outfit as FontHeading, Inter as FontSans } from "next/font/google"
+import { Poppins as FontHeading, Poppins as FontSans } from "next/font/google"
 import Script from "next/script"
 
 import Footer from "@/components/footer"
@@ -12,11 +12,13 @@ import "./globals.css"
 
 const fontSans = FontSans({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
 })
 
 const fontHeading = FontHeading({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-heading",
 })
 
