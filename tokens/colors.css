@@ -1,0 +1,32 @@
+:root {
+  --cbm-color-brand: #00c776;
+  --cbm-color-brand-100: #00914c;
+  --cbm-color-brand-200: #00a056;
+  --cbm-color-brand-300: #00ae64;
+  --cbm-color-brand-400: #00d684;
+  --cbm-color-brand-500: #00e08b;
+  --cbm-color-brand-600: #00f6ad;
+  --cbm-color-brand-700: #e6fff3;
+  --cbm-color-secondary: #2578ff;
+  --cbm-color-secondary-100: #0f70ff;
+  --cbm-color-secondary-200: #4087ff;
+  --cbm-color-secondary-300: #5c99ff;
+  --cbm-color-secondary-400: #70a7ff;
+  --cbm-color-secondary-500: #8fbbff;
+  --cbm-color-secondary-600: #c1daff;
+  --cbm-color-secondary-700: #f0f6ff;
+  --cbm-color-alert: #ff5e37;
+  --cbm-color-gray-900: #464646;
+  --cbm-color-gray-800: #545454;
+  --cbm-color-gray-700: #656565;
+  --cbm-color-gray-600: #727272;
+  --cbm-color-gray-500: #787878;
+  --cbm-color-gray-300: #c5c5c5;
+  --cbm-color-gray-200: #e0e0e0;
+  --cbm-color-light-100: #f1f1f1;
+  --cbm-color-light-50: #fafafa;
+  --cbm-color-light-0: #ffffff;
+  --cbm-color-notes-pink: #ff56da;
+  --cbm-color-white: #ffffff;
+  --cbm-color-emerald-500: #10b981;
+}

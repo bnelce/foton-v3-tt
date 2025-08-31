@@ -49,7 +49,7 @@ const CopyClass = ({ value }: { value: string }) => {
               aria-hidden="true"
             >
               <path
-                fill="#10B981"
+                fill="var(--cbm-color-emerald-500)"
                 d="M14.548 3.488a.75.75 0 0 1-.036 1.06l-8.572 8a.75.75 0 0 1-1.023 0l-3.429-3.2a.75.75 0 0 1 1.024-1.096l2.917 2.722 8.06-7.522a.75.75 0 0 1 1.06.036Z"
               />
             </svg>
