@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -10,42 +10,42 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#00C776",
-          100: "#00914C",
-          200: "#00A056",
-          300: "#00AE64",
-          400: "#00D684",
-          500: "#00E08B",
-          600: "#00F6AD",
-          700: "#E6FFF3",
+          DEFAULT: "var(--cbm-color-brand)",
+          100: "var(--cbm-color-brand-100)",
+          200: "var(--cbm-color-brand-200)",
+          300: "var(--cbm-color-brand-300)",
+          400: "var(--cbm-color-brand-400)",
+          500: "var(--cbm-color-brand-500)",
+          600: "var(--cbm-color-brand-600)",
+          700: "var(--cbm-color-brand-700)",
         },
         secondary: {
-          DEFAULT: "#2578FF",
-          100: "#0F70FF",
-          200: "#4087FF",
-          300: "#5C99FF",
-          400: "#70A7FF",
-          500: "#8FBBFF",
-          600: "#C1DAFF",
-          700: "#F0F6FF",
+          DEFAULT: "var(--cbm-color-secondary)",
+          100: "var(--cbm-color-secondary-100)",
+          200: "var(--cbm-color-secondary-200)",
+          300: "var(--cbm-color-secondary-300)",
+          400: "var(--cbm-color-secondary-400)",
+          500: "var(--cbm-color-secondary-500)",
+          600: "var(--cbm-color-secondary-600)",
+          700: "var(--cbm-color-secondary-700)",
         },
-        alert: "#FF5E37",
+        alert: "var(--cbm-color-alert)",
         gray: {
-          900: "#464646",
-          800: "#545454",
-          700: "#656565",
-          600: "#727272",
-          500: "#787878",
-          300: "#C5C5C5",
-          200: "#E0E0E0",
+          900: "var(--cbm-color-gray-900)",
+          800: "var(--cbm-color-gray-800)",
+          700: "var(--cbm-color-gray-700)",
+          600: "var(--cbm-color-gray-600)",
+          500: "var(--cbm-color-gray-500)",
+          300: "var(--cbm-color-gray-300)",
+          200: "var(--cbm-color-gray-200)",
         },
         light: {
-          100: "#F1F1F1",
-          50: "#FAFAFA",
-          0: "#FFFFFF",
+          100: "var(--cbm-color-light-100)",
+          50: "var(--cbm-color-light-50)",
+          0: "var(--cbm-color-light-0)",
         },
         pink: {
-          notes: "#FF56DA",
+          notes: "var(--cbm-color-notes-pink)",
         },
       },
       fontFamily: {
@@ -71,6 +71,6 @@ const config: Config = {
     },
   },
   plugins: [],
-};
+}
 
-export default config;
+export default config

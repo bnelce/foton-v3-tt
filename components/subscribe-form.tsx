@@ -64,7 +64,7 @@ function Form() {
             </div>
             <Input
               id={id}
-              className="h-10 flex-1 rounded-full border-zinc-600/65 bg-zinc-700/30 ps-9 text-zinc-100 placeholder:text-zinc-500 md:min-w-64 [&:-webkit-autofill]:bg-zinc-700/30 [&:-webkit-autofill]:[-webkit-text-fill-color:#fff] [&:-webkit-autofill]:[transition:background-color_5000000s_ease-in-out_0s]"
+              className="h-10 flex-1 rounded-full border-zinc-600/65 bg-zinc-700/30 ps-9 text-zinc-100 placeholder:text-zinc-500 md:min-w-64 [&:-webkit-autofill]:bg-zinc-700/30 [&:-webkit-autofill]:[-webkit-text-fill-color:var(--cbm-color-white)] [&:-webkit-autofill]:[transition:background-color_5000000s_ease-in-out_0s]"
               placeholder="Enter your email..."
               type="email"
               value={formState.email}
@@ -149,7 +149,7 @@ function Illustration({ className }: { className?: string }) {
     >
       <g filter={`url(#${id}a)`} style={{ mixBlendMode: "plus-lighter" }}>
         <path
-          fill="#fff"
+          fill="var(--cbm-color-white)"
           fillOpacity=".48"
           d="M189 76.284 242.642 24 189 83.753v19.691l-8.148-6.11L24 244 176.099 89.864v-13.58H189Z"
         />
