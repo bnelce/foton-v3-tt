@@ -77,7 +77,7 @@ export default function Component() {
     <div className="flex h-full flex-col gap-2 *:first:grow">
       <div>
         <Tree
-          className="relative before:absolute before:inset-0 before:ms-4.5 before:bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(var(--tree-indent)-1px),var(--border)_calc(var(--tree-indent)-1px),var(--border)_calc(var(--tree-indent)))]"
+          className="relative before:absolute before:inset-0 before:ms-4.5 before:bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(var(--tree-indent)-1px),var(--cbm-border)_calc(var(--tree-indent)-1px),var(--cbm-border)_calc(var(--tree-indent)))]"
           indent={indent}
           tree={tree}
         >

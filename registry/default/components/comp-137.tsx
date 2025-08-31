@@ -10,7 +10,7 @@ export default function Component() {
       <Checkbox
         style={
           {
-            "--primary": "var(--color-emerald-500)",
+            "--cbm-primary": "var(--color-emerald-500)",
           } as React.CSSProperties
         }
         id={id}

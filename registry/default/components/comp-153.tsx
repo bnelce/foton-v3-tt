@@ -8,7 +8,7 @@ export default function Component() {
   return (
     <RadioGroup
       defaultValue="1"
-      className="[--primary:var(--color-indigo-500)] [--ring:var(--color-indigo-300)] in-[.dark]:[--primary:var(--color-indigo-500)] in-[.dark]:[--ring:var(--color-indigo-900)]"
+      className="[--cbm-primary:var(--color-indigo-500)] [--cbm-ring:var(--color-indigo-300)] in-[.dark]:[--cbm-primary:var(--color-indigo-500)] in-[.dark]:[--cbm-ring:var(--color-indigo-900)]"
     >
       <div className="flex items-center gap-2">
         <RadioGroupItem value="1" id={`${id}-1`} />
