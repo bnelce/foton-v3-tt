@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
-import { getSource } from "@/lib/source";
+import { source } from "@/lib/source";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
@@ -14,21 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const locales: ("pt-BR" | "en")[] = ["pt-BR", "en"];
-  const localizedDocs: MetadataRoute.Sitemap = [];
+  const docRoutes: MetadataRoute.Sitemap = source.getPages().map((page) => ({
+    url: `${baseUrl}/docs/${page.slugs.join("/")}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
 
-  for (const locale of locales) {
-    const prefix = locale === "en" ? "/en" : "";
-    const src = getSource(locale);
-    for (const page of src.getPages()) {
-      localizedDocs.push({
-        url: `${baseUrl}${prefix}/docs/${page.slugs.join("/")}`,
-        lastModified: new Date(),
-        changeFrequency: "weekly",
-        priority: 0.8,
-      });
-    }
-  }
-
-  return [...routes, ...localizedDocs];
+  return [...routes, ...docRoutes];
 }

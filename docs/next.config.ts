@@ -5,11 +5,6 @@ const withMDX = createMDX();
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  i18n: {
-    // Phase 1: enable locales with pt-BR as default (no URL prefix for default)
-    locales: ["pt-BR", "en"],
-    defaultLocale: "pt-BR",
-  },
   images: {
     remotePatterns: [
       {
@@ -25,12 +20,6 @@ const nextConfig: NextConfig = {
       {
         source: "/docs",
         destination: "/docs/introduction",
-        permanent: false,
-      },
-      {
-        // Locale-aware redirect for English
-        source: "/en/docs",
-        destination: "/en/docs/introduction",
         permanent: false,
       },
       {

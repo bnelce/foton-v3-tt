@@ -17,12 +17,6 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  alternates: {
-    languages: {
-      "pt-BR": "/",
-      "en-US": "/en",
-    },
-  },
   keywords: [
     "react",
     "ui",
@@ -40,7 +34,6 @@ export const metadata: Metadata = {
   creator: "sadmann7",
   openGraph: {
     type: "website",
-    // Phase 1: default locale to pt_BR; will be dynamic per-locale in a later phase
     locale: "pt_BR",
     url: siteConfig.url,
     title: siteConfig.name,
@@ -83,7 +76,6 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    // Phase 1: default HTML language to pt-BR; will become dynamic later
     <html lang="pt-BR" suppressHydrationWarning>
       <body
         className={cn(

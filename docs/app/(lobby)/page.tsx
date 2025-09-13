@@ -11,7 +11,7 @@ export default function IndexPage() {
           className="animate-fade-up text-balance bg-linear-to-br from-foreground/80 to-muted-foreground bg-clip-text text-center font-bold text-4xl/tight text-transparent leading-tight tracking-tighter opacity-0 drop-shadow-xs md:text-5xl/tight"
           style={{ animationDelay: "0.20s", animationFillMode: "forwards" }}
         >
-          Accessible components for shadcn/ui
+          Componentes acessíveis para shadcn/ui
         </h1>
         <p
           className="max-w-2xl animate-fade-up text-balance text-center font-light text-lg text-muted-foreground opacity-0 md:text-xl"
@@ -24,7 +24,7 @@ export default function IndexPage() {
           style={{ animationDelay: "0.40s", animationFillMode: "forwards" }}
         >
           <Button asChild>
-            <Link href="/docs/components/checkbox-group">View Components</Link>
+            <Link href="/docs/components/checkbox-group">Ver componentes</Link>
           </Button>
           <Button variant="outline" asChild>
             <Link

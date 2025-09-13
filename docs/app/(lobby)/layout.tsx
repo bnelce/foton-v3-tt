@@ -1,6 +1,6 @@
 import { HomeLayout } from "fumadocs-ui/layouts/home";
 import { SiteFooter } from "@/components/site-footer";
-import { getBaseOptions } from "@/config/layout";
+import { baseOptions } from "@/config/layout";
 
 interface IndexLayoutProps {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ interface IndexLayoutProps {
 export default function IndexLayout({ children }: IndexLayoutProps) {
   return (
     <div className="relative flex min-h-screen flex-col">
-      <HomeLayout {...getBaseOptions("pt-BR")}>
+      <HomeLayout {...baseOptions}>
         <main className="flex-1">{children}</main>
         <SiteFooter />
       </HomeLayout>

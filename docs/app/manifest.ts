@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Dice UI",
     short_name: "Dice UI",
-    description: "Unstyled ui component library.",
+    description: "Biblioteca de componentes de UI sem estilo.",
     start_url: "/",
     display: "standalone",
     background_color: "#fff",

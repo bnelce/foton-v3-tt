@@ -12,6 +12,5 @@
     ["clsx\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
   ],
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "windsurf.agent.autoApprove": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

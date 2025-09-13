@@ -61,27 +61,8 @@ export default defineConfig({
   },
 });
 
-// Phase 2: prepare multi-locale doc sources.
-// For now, both locales point to the existing directory. In Phase 2b, we'll
-// move content into content/pt-br/docs and content/en/docs respectively.
-
-export const { docs: docsPt, meta: metaPt } = defineDocs({
-  dir: "content/pt-br/docs",
-  docs: {
-    schema: frontmatterSchema.extend({
-      preview: z.boolean().optional(),
-      links: z
-        .object({
-          doc: z.string().optional(),
-          api: z.string().optional(),
-        })
-        .optional(),
-    }),
-  },
-});
-
-export const { docs: docsEn, meta: metaEn } = defineDocs({
-  dir: "content/en/docs",
+export const { docs, meta } = defineDocs({
+  dir: "content/docs",
   docs: {
     schema: frontmatterSchema.extend({
       preview: z.boolean().optional(),
