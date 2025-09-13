@@ -5,7 +5,7 @@ export default function CheckboxGroupDemo() {
   return (
     <CheckboxGroup.Root className="peer flex flex-col gap-3.5">
       <CheckboxGroup.Label className="text-sm text-zinc-600 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 dark:text-zinc-400">
-        Select your favorite tricks
+        Selecione suas manobras favoritas
       </CheckboxGroup.Label>
       <CheckboxGroup.List className="flex gap-3 data-[orientation=horizontal]:flex-row data-[orientation=vertical]:flex-col">
         <label className="flex w-fit select-none items-center gap-2 text-sm text-zinc-900 leading-none has-data-disabled:cursor-not-allowed has-data-invalid:text-red-500 has-data-disabled:opacity-50 dark:text-zinc-100 dark:has-data-invalid:text-red-400">

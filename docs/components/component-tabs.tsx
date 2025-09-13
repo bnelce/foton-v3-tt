@@ -38,11 +38,11 @@ export function ComponentTabs({
     if (!Component) {
       return (
         <p className="text-muted-foreground text-sm">
-          Component{" "}
+          Componente{" "}
           <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">
             {name}
           </code>{" "}
-          not found in registry.
+          não encontrado no registro.
         </p>
       );
     }
@@ -51,9 +51,9 @@ export function ComponentTabs({
   }, [name, config.style]);
 
   return (
-    <Tabs items={["Preview", "Code"]} className="rounded-md">
+    <Tabs items={["Prévia", "Código"]} className="rounded-md">
       <Tab
-        value="Preview"
+        value="Prévia"
         tabIndex={preventPreviewFocus ? -1 : 0}
         className={cn(
           "not-prose relative rounded-none",
@@ -80,7 +80,7 @@ export function ComponentTabs({
         </div>
       </Tab>
       <Tab
-        value="Code"
+        value="Código"
         className="rounded-none py-0 **:[figure]:rounded-none **:[pre]:h-[424.5px] **:[pre]:px-4"
       >
         {Code}
